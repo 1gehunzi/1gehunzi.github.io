@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <script>self["MonacoEnvironment"] = (function (paths) {
+          return {
+            globalAPI: false,
+            getWorkerUrl : function (moduleId, label) {
+              var result =  paths[label];
+              if (/^((http:)|(https:)|(file:)|(\/\/))/.test(result)) {
+                var currentUrl = String(window.location);
+                var currentOrigin = currentUrl.substr(0, currentUrl.length - window.location.hash.length - window.location.search.length - window.location.pathname.length);
+                if (result.substring(0, currentOrigin.length) !== currentOrigin) {
+                  var js = '/*' + label + '*/importScripts("' + result + '");';
+                  var blob = new Blob([js], { type: 'application/javascript' });
+                  return URL.createObjectURL(blob);
+                }
+              }
+              return result;
+            }
+          };
+        })({
+  "editorWorkerService": "/example/assets-monaco/editor.worker.bundle.js",
+  "css": "/example/assets-monaco/css.worker.bundle.js",
+  "html": "/example/assets-monaco/html.worker.bundle.js",
+  "json": "/example/assets-monaco/json.worker.bundle.js",
+  "typescript": "/example/assets-monaco/ts.worker.bundle.js",
+  "javascript": "/example/assets-monaco/ts.worker.bundle.js",
+  "less": "/example/assets-monaco/css.worker.bundle.js",
+  "scss": "/example/assets-monaco/css.worker.bundle.js",
+  "handlebars": "/example/assets-monaco/html.worker.bundle.js",
+  "razor": "/example/assets-monaco/html.worker.bundle.js"
+});</script>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>功能示例(Vue版)列表 | Mars3D三维可视化平台 | 火星科技</title>
+
+    <script type="module" crossorigin src="/example/assets-vue/index.67578882.js"></script>
+    <link rel="modulepreload" href="/example/assets-vue/common.10acb102.js">
+    <link rel="stylesheet" href="/example/assets-vue/common.cf41f3f5.css">
+    <link rel="stylesheet" href="/example/assets-vue/index.56cb7555.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  </body>
+</html>
