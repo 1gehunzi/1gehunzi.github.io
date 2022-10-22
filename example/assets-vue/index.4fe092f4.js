@@ -1,1 +1,0 @@
-import{_ as a,r as o,o as s,q as r,z as t,i as e}from"./common.10acb102.js";var i=a({},[["render",function(a,i){const n=o("mars-dialog");return s(),r(n,{visible:!0,right:"10",top:"10"},{default:t((()=>[e(" 请 F12 打开查看 console.log 打印的日志 ")])),_:1})}]]);export{i as default};

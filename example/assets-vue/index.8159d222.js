@@ -1,0 +1,1 @@
+import{f as o}from"./fixedRoute-info.7eda4c00.js";import{d as a,o as s,Y as d}from"./common.5a7f0626.js";import"./read.03cd8dda.js";const e=a({__name:"index",setup:a=>(a,e)=>(s(),d(o))});export{e as default};

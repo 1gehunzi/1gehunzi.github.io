@@ -1,1 +1,0 @@
-import{_ as a}from"./heatmap.26399af7.js";import{_ as s,o as e,c as o,p as r,l as d,a as n}from"./common.10acb102.js";const t={name:"divPanel"},f={class:"divPanel"},m=[(a=>(r("data-v-fd4e79f6"),a=a(),d(),a))((()=>n("img",{src:a},null,-1)))];var c=s(t,[["render",function(a,s,r,d,n,t){return e(),o("div",f,m)}],["__scopeId","data-v-fd4e79f6"]]);export{c as default};

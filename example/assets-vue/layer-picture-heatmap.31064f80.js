@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as s,p as c,l as r,a as t}from"./common.10acb102.js";const l={},o={class:"layer-pictrue"},p=[(a=>(c("data-v-7de53cb1"),a=a(),r(),a))((()=>t("img",{class:"layer-picture_img",src:"/example/assets-vue/heatmap.59e4898a.png"},null,-1)))];var d=a(l,[["render",function(a,c){return e(),s("div",o,p)}],["__scopeId","data-v-7de53cb1"]]);export{d as default};

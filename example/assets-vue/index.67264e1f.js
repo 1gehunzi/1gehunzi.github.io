@@ -1,0 +1,1 @@
+import{_ as a}from"./read.03cd8dda.js";import{aH as o,o as r,Y as s,b2 as t,a4 as e}from"./common.5a7f0626.js";var d=a({},[["render",function(a,d){const i=o("mars-dialog");return r(),s(i,{visible:!0,right:"10",top:"10"},{default:t((()=>[e(" 请 F12 打开查看 console.log 打印的日志 ")])),_:1})}]]);export{d as default};

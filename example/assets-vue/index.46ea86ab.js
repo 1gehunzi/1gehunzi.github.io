@@ -1,0 +1,1 @@
+import{w as a}from"./read.03cd8dda.js";import{d as e,au as t}from"./common.5a7f0626.js";const o=e({__name:"index",setup(e){const{activate:o}=a.exports.useWidget();return t((()=>{o("query-poi")})),()=>{}}});export{o as default};

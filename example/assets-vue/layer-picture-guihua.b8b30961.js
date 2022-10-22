@@ -1,1 +1,0 @@
-import{_ as a,o as s,c as e,p as r,l as c,a as t}from"./common.10acb102.js";const d={},l={class:"layer-pictrue"},o=[(a=>(r("data-v-7201fd4d"),a=a(),c(),a))((()=>t("img",{class:"layer-picture_img",src:"/example/assets-vue/guihua.ba2979fa.jpg"},null,-1)))];var u=a(d,[["render",function(a,r){return s(),e("div",l,o)}],["__scopeId","data-v-7201fd4d"]]);export{u as default};
