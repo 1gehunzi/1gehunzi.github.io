@@ -1,1 +1,0 @@
-import{d as a,o as m,c as n,a as e}from"./common.5a7f0626.js";e(a({__name:"App",setup(a){const e=a=>{let m="/";m+="read-vue.html",m+="?id="+encodeURI(a.main),a.params&&(m+=`&${a.params}&name=${a.fullName}`),window.open(m,"_blank")};return(a,o)=>(m(),n("div",{onJump:e},null,32))}})).mount("#app");
