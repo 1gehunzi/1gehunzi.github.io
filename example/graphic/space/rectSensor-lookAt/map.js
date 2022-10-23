@@ -15,11 +15,32 @@ export const mapOptions = {
       constrainedAxis: false // 解除在南北极区域鼠标操作限制
     }
   },
+  // control: {
+  //   clockAnimate: true, // 时钟动画控制(左下角)
+  //   timeline: true, // 是否显示时间线控件
+  //   compass: { top: "10px", left: "5px" }
+  // }
   control: {
-    clockAnimate: true, // 时钟动画控制(左下角)
-    timeline: true, // 是否显示时间线控件
-    compass: { top: "10px", left: "5px" }
-  }
+      baseLayerPicker: true, // basemaps底图切换按钮
+      homeButton: true, // 视角复位按钮
+      sceneModePicker: true, // 二三维切换按钮
+      navigationHelpButton: true, // 帮助按钮
+      fullscreenButton: true, // 全屏按钮
+      contextmenu: { hasDefault: true } // 右键菜单
+    },
+    terrain: {
+      url: "//data.mars3d.cn/terrain",
+      show: false
+    },
+    basemaps: [
+      {
+        name: "天地图影像",
+        icon: "img/basemaps/tdt_img.png",
+        type: "tdt",
+        layer: "img_d",
+        show: true
+      }
+    ]
 }
 
 // 事件对象，用于抛出事件到面板中
