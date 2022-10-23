@@ -28,19 +28,43 @@ export const mapOptions = {
       fullscreenButton: true, // 全屏按钮
       contextmenu: { hasDefault: true } // 右键菜单
     },
-    terrain: {
-      url: "//data.mars3d.cn/terrain",
-      show: false
-    },
+    // terrain: {
+    //   url: "//data.mars3d.cn/terrain",
+    //   show: false
+    // },
     basemaps: [
-      {
-        name: "天地图影像",
-        icon: "img/basemaps/tdt_img.png",
-        type: "tdt",
-        layer: "img_d",
-        show: true
-      }
-    ]
+    {
+      name: "单张图片",
+      icon: "img/basemaps/bingmap.png",
+      type: "image",
+      url: "//data.mars3d.cn/file/img/world/world.jpg"
+    },
+    {
+      name: "夜晚图片",
+      icon: "img/basemaps/blackMarble.png",
+      type: "image",
+      url: "//data.mars3d.cn/file/img/world/night.jpg",
+      dayAlpha: 0.1,
+      nightAlpha: 1.0,
+      brightness: 3.5
+    },
+    {
+      name: "蓝色底图",
+      icon: "img/basemaps/bd-c-midnight.png",
+      type: "image",
+      url: "//data.mars3d.cn/file/img/world/blue.jpg",
+      show: true
+    }
+  ]
+    // basemaps: [
+    //   {
+    //     name: "天地图影像",
+    //     icon: "img/basemaps/tdt_img.png",
+    //     type: "tdt",
+    //     layer: "img_d",
+    //     show: true
+    //   }
+    // ]
 }
 
 // 事件对象，用于抛出事件到面板中
